@@ -27,7 +27,7 @@ Allow POST Method to: [http://0.0.0.0:YOUR_PORT](http://0.0.0.0:YOUR_PORT)
 
 Example Typescript React
 ```javascript
-const CLASSIFY_API = `http://0.0.0.0:YOUR_PORT/classify`
+const CLASSIFY_API = `http://0.0.0.0:YOUR_PORT/classify`//<-- change to 0.0.0.0 your private IP(ex:192.168.1.5) if use it for Mobile App (use ifconfig command to get)
 export const getImageClass = (imageUrl: string): Promise<string> => {
     return new Promise((resolve, reject) => {
         const data = new FormData()
