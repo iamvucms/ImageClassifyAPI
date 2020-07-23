@@ -10,6 +10,7 @@ This a simple image classify server use Flask + CNN,  with 7 classes:
 - Food
 
 Accuracy: ~80%
+
 This server serves for project [React Native Instagram Clone](https://github.com/iamvucms/react-native-instagram-clone)
 ## Installation
 
