@@ -26,7 +26,7 @@ flask run --host=0.0.0.0 --port=YOUR_PORT
 Allow POST Method to: [http://0.0.0.0:YOUR_PORT](http://0.0.0.0:YOUR_PORT)
 
 Example Typescript React
-```
+```javascript
 const CLASSIFY_API = `http://0.0.0.0:YOUR_PORT/classify`
 export const getImageClass = (imageUrl: string): Promise<string> => {
     return new Promise((resolve, reject) => {
