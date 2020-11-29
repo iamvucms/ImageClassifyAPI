@@ -19,7 +19,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 ```bash
 git clone https://github.com/iamvucms/ImageClassifyAPI.git
 cd ImageClassifyAPI
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 flask run --host=0.0.0.0 --port=YOUR_PORT
 OR
 sudo chmod 755 run.sh
