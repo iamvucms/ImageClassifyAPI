@@ -7,13 +7,13 @@ from PIL import Image
 PATH_TRAIN = 'datasets/train/'
 PATH_VAL = 'datasets/validation/'
 
-architecture_path = PATH_VAL + 'architecture/'
-art_path = PATH_VAL + 'art/'
-cosplay_path = PATH_VAL + 'cosplay/'
-decor_path = PATH_VAL + 'decor/'
-fashion_path = PATH_VAL + 'fashion/'
-food_path = PATH_VAL + 'food/'
-landscape_path = PATH_VAL + 'landscape/'
+architecture_path = PATH_TRAIN + 'architecture/'
+art_path = PATH_TRAIN + 'art/'
+cosplay_path = PATH_TRAIN + 'cosplay/'
+decor_path = PATH_TRAIN + 'decor/'
+fashion_path = PATH_TRAIN + 'fashion/'
+food_path = PATH_TRAIN + 'food/'
+landscape_path = PATH_TRAIN + 'landscape/'
 
 
 
