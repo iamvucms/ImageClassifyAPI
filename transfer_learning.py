@@ -5,7 +5,7 @@ import numpy as np
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
-from tensorflow.keras.preprocessing.image import    
+from tensorflow.keras.preprocessing.image import  ImageDataGenerator  
 from tensorflow.python.keras.callbacks import EarlyStopping, ModelCheckpoint
 
 PATH = r'datasets/'
@@ -60,7 +60,7 @@ num_val_food = len(os.listdir(train_food_dir))
 num_val_landscape = len(os.listdir(train_landscape_dir))
 
 total_train = num_train_architecture + num_train_art + num_train_decor + num_train_fashion + num_train_cosplay + num_train_food + num_train_landscape
-total_val = num_val_architecture + num_val_art + num_val_decor + num_val_fashion + num_val_cosplay + num_val_food + num_val_landscape
+total_val  = num_val_architecture + num_val_art + num_val_decor + num_val_fashion + num_val_cosplay + num_val_food + num_val_landscape
 
 batch_size = 128
 epochs = 20
@@ -163,7 +163,7 @@ history = model.fit(train_data_gen,
                               epochs=50,
                               validation_data=val_data_gen,
                               steps_per_epoch=total_train // batch_size,
-                              validation_steps=total_val // batch_size,
+                              validation_steps= total_val // batch_size,
                               callbacks=[checkpoint, es])
 
 

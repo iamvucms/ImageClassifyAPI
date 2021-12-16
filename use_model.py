@@ -29,7 +29,7 @@ def loadImageURL(URL):
     with urlopen(URL) as url:
         img = Image.open(BytesIO(url.read()))
         img = img.convert('RGB')
-        img = img.resize((150,150),Image.NEAREST)
+        img = img.resize((299,299),Image.NEAREST)
         img = image.img_to_array(img)
     return image.img_to_array(img)
     
@@ -44,7 +44,8 @@ def classify(IMAGE_URI):
         class_predict = class_name[np.argmax(pred)]
         return class_predict
     except Exception as e:
+        print(e)
         return None
-
+category = classify('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')
 #predit some images
-
+print(category)
