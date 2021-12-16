@@ -10,7 +10,6 @@ def index():
 @app.route('/classify',methods=['POST'])
 def say_hello():
   URL = request.form.get('url')
-  print({'url':URL})
   CLASS = classify(URL)
   data = ''
   if(CLASS!=None):
