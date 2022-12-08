@@ -2,7 +2,7 @@ absl-py==0.9.0
 altgraph==0.16.1
 astunparse==1.6.3
 cachetools==4.1.1
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 cycler==0.10.0
